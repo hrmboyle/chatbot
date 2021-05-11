@@ -34,50 +34,67 @@ describe("getBotReply", () => {
 
     const expectedReply4 =
       "Alright then, what about some <a href = 'https://www.google.com'>Tai Chi?</a>";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply4).toEqual(expectedReply4);
 
     const botReply5 = getBotReply("no");
 
     const expectedReply5 = "Forest walk up your alley?";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply5).toEqual(expectedReply5);
 
     const botReply6 = getBotReply("no");
 
     const expectedReply6 = "How about some Disc Golf?";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply6).toEqual(expectedReply6);
 
     const botReply7 = getBotReply("no");
 
     const expectedReply7 =
       "Ahh, how about solving some of the worlds hardest math problems?";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply7).toEqual(expectedReply7);
 
     const botReply8 = getBotReply("no");
 
     const expectedReply8 =
       "maybe we could give praise to the singularity? Ever heard of Roko's Basilisk?";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply8).toEqual(expectedReply8);
 
     const botReply9 = getBotReply("no");
 
     const expectedReply9 = "Okay then... How about a good old fashion rave?";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply9).toEqual(expectedReply9);
 
     const botReply10 = getBotReply("no");
 
     const expectedReply10 = "Go freediving then!";
-    expect(botReply3).toEqual(expectedReply3);
+    expect(botReply10).toEqual(expectedReply10);
 
     const botReply11 = getBotReply("no");
 
     const expectedReply11 = "Okay, ahh,";
+    expect(botReply11).toEqual(expectedReply11);
+  });
+  // const botReply1 = getBotReply("energised" || "yes");
+  // const expectedReply1 =
+  //   "Fair enough, how about some yoga?";
+
+  // Uncomment the following line and update your expectation
+  // expect(botReply1).toEqual(expectedReply1);
+  it("two", () => {
+    // Input: Henry
+    const botReply1 = getBotReply("Henry");
+    // Output: Are you feeling energised or relaxed?
+    const expectedReply1 = "Are you feeling energised or relaxed?";
+    expect(botReply1).toEqual(expectedReply1);
+
+    const botReply2 = getBotReply("relaxed");
+
+    const expectedReply2 =
+      "How about going for a nap? Maybe you might lucid dream!";
+    expect(botReply2).toEqual(expectedReply2);
+
+    const botReply3 = getBotReply("no");
+
+    const expectedReply3 = "break";
     expect(botReply3).toEqual(expectedReply3);
-
-    // const botReply1 = getBotReply("energised" || "yes");
-    // const expectedReply1 =
-    //   "Fair enough, how about some yoga?";
-
-    // Uncomment the following line and update your expectation
-    // expect(botReply1).toEqual(expectedReply1);
   });
 });
