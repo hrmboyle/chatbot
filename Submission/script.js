@@ -28,6 +28,7 @@ const getBotReply = (msg) => {
   }
 
   if (level === 3) {
+    level = 4;
     if (path === "yes") {
       if (msg === "no") {
         return "Okay then, what about some <a href = 'https://www.google.com'>yoga?</a>";
@@ -47,10 +48,10 @@ const getBotReply = (msg) => {
         return "well sweet as";
       }
     }
-    level = 4;
   }
 
   if (level === 4) {
+    level = 5;
     if (path === "yes") {
       if (msg === "no" || msg === "nah" || msg === "n") {
         return "Alright then, what about some <a href = 'https://www.google.com'>Tai Chi?</a>";
@@ -58,25 +59,23 @@ const getBotReply = (msg) => {
       if ((msg = "yes" || "sure" || "y")) {
         return "cool";
       }
+    }
 
-      if (path === "no") {
-        if (msg === "no") {
-          return "Allright then, how about some good old meditation";
-        }
-
-        if (msg === "yes") {
-          return "well sweet as";
-        }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Go jump in a float tank, you may well astral project!";
       }
 
-      level = 5;
+      if (msg === "yes") {
+        return "well sweet as";
+      }
     }
   }
 
   if (level === 5) {
+    level = 6;
     if (path === "yes") {
       if (msg === "no" || msg === "nah" || msg === "n") {
-        path = "no";
         return "Forest walk up your alley?";
       }
       if (msg === "yes" || msg === "sure" || msg === "y") {
@@ -85,45 +84,41 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "No? Why don't you go sit under a tree, meditate on the essence of being and come to the shores of deeper a connection to all that is?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
     }
-
-    level = 6;
   }
 
   if (level === 6) {
+    level = 7;
     if (path === "yes") {
-      if ((msg = "no" || "nah" || "n")) {
-        path = "no";
+      if (msg === "no" || msg === "nah" || msg === "n") {
         return "How about some Disc Golf?";
       }
-      if ((msg = "yes" || "sure" || "y")) {
+      if (msg === "yes" || msg === "sure" || msg === "y") {
         return "cool";
       }
     }
 
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "Okay, that last one is a bit of admin. Why don't we go ahead and watch a film instead?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
     }
-
-    level = 7;
   }
 
   if (level === 7) {
+    level = 8;
     if (path === "yes") {
       if ((msg = "no" || "nah" || "n")) {
-        path = "no";
         return "Ahh, how about solving some of the worlds hardest math problems?";
       }
       if ((msg = "yes" || "sure" || "y")) {
@@ -132,43 +127,20 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "Well, I headrd theres this software that aims to get you high without drugs?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
-      level = 8;
     }
   }
 
   if (level === 8) {
+    level = 9;
     if (path === "yes") {
       if ((msg = "no" || "nah" || "n")) {
-        path = "no";
         return "maybe we could give praise to the singularity? Ever heard of Roko's Basilisk?";
-      }
-      if ((msg = "yes" || "sure" || "y")) {
-        return "cool";
-      }
-      if (path === "no") {
-        if (msg === "no") {
-          return "Allright then, how about some good old meditation";
-        }
-
-        if (msg === "yes") {
-          return "well sweet as";
-        }
-      }
-      level = 9;
-    }
-  }
-
-  if (level === 9) {
-    if (path === "yes") {
-      if ((msg = "no" || "nah" || "n")) {
-        path = "no";
-        return "Okay then... How about a good old fashion rave?";
       }
       if ((msg = "yes" || "sure" || "y")) {
         return "cool";
@@ -176,20 +148,19 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "Alas - why not explore the largest number you can count to in your head?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
     }
-    level = 10;
   }
 
-  if (level === 10) {
+  if (level === 9) {
+    level = 10;
     if (path === "yes") {
       if ((msg = "no" || "nah" || "n")) {
-        path = "no";
         return "Go freediving then!";
       }
       if ((msg = "yes" || "sure" || "y")) {
@@ -198,21 +169,20 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "Yeah I would not want to do that either, but, I also heard you can get quite the rush by simple breathwork?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
     }
-    level = 11;
   }
 
-  if (level === 11) {
+  if (level === 10) {
+    level = 11;
     if (path === "yes") {
       if ((msg = "no" || "nah" || "n")) {
-        path = "no";
-        return "Okay, ahh,";
+        return "Okay, skydiving?";
       }
       if ((msg = "yes" || "sure" || "y")) {
         return "cool";
@@ -220,14 +190,139 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no") {
-        return "Allright then, how about some good old meditation";
+        return "Okay, how about, contemplating the existential dred that comes in our modern era, then with the power of interpretive dance, freeing yourself from the shackles of malignent thoughts?";
       }
 
       if (msg === "yes") {
         return "well sweet as";
       }
     }
+  }
+
+  if (level === 11) {
     level = 12;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "What about starting a new <strike>cult</strike> religion?";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Thought that was it for sure eh. Well, go read a book?";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
+  }
+
+  if (level === 12) {
+    level = 13;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "How about you go delve into the realms of Virtual Reality?";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "What about reading a comic?";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
+  }
+
+  if (level === 13) {
+    level = 14;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "Okay okay, why don't you go plant some trees?";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Well, if you aren't up to reading, why not do some writing?";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
+  }
+
+  if (level === 14) {
+    level = 15;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "Not so keen on trees huh? Why don't you do your best to destablise central government banking?";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Look, I am running low on ideas here, maybe start of a career in painting as an abstract impressionist?";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
+  }
+
+  if (level === 15) {
+    level = 16;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "Okay (name), I am reaching my wits end. You could go and learn to fly drones?";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Well, why not instigate a premonition that will forever change the trajectory of your being?";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
+  }
+
+  if (level === 16) {
+    level = 17;
+    if (path === "yes") {
+      if ((msg = "no" || "nah" || "n")) {
+        return "Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a simple yes, otherwise, here are some more sophisticated kin of mine";
+      }
+      if ((msg = "yes" || "sure" || "y")) {
+        return "cool";
+      }
+    }
+    if (path === "no") {
+      if (msg === "no") {
+        return "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble yes (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
+      }
+
+      if (msg === "yes") {
+        return "well sweet as";
+      }
+    }
   }
 };
 
