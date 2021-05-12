@@ -11,11 +11,15 @@ beforeEach(() => {
 });
 
 describe("getBotReply", () => {
-  it("one", () => {
-    // Input: Henry
-    const botReply1 = getBotReply("Henry");
-    // Output: Are you feeling energised or relaxed?
-    const expectedReply1 = "Are you feeling energised or relaxed?";
+  it("Branch Energised", () => {
+    const botReply0 = getBotReply("Henry");
+    const expectedReply0 = `Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
+    expect(botReply0).toEqual(expectedReply0);
+
+    const botReply1 = getBotReply("ok");
+
+    const expectedReply1 =
+      "Great, now tell me, are you feeling energised or relaxed?";
     expect(botReply1).toEqual(expectedReply1);
 
     const botReply2 = getBotReply("energised");
@@ -26,14 +30,12 @@ describe("getBotReply", () => {
 
     const botReply3 = getBotReply("no");
 
-    const expectedReply3 =
-      "Okay then, what about some <a href = 'https://www.google.com'>yoga?</a>";
+    const expectedReply3 = "Okay then, what about some yoga?";
     expect(botReply3).toEqual(expectedReply3);
 
     const botReply4 = getBotReply("no");
 
-    const expectedReply4 =
-      "Alright then, what about some <a href = 'https://www.google.com'>Tai Chi?</a>";
+    const expectedReply4 = "Alright then, what about some Tai Chi?";
     expect(botReply4).toEqual(expectedReply4);
 
     const botReply5 = getBotReply("no");
@@ -110,10 +112,14 @@ describe("getBotReply", () => {
   // Uncomment the following line and update your expectation
   // expect(botReply1).toEqual(expectedReply1);
   it("two", () => {
-    // Input: Henry
-    const botReply1 = getBotReply("Henry");
-    // Output: Are you feeling energised or relaxed?
-    const expectedReply1 = "Are you feeling energised or relaxed?";
+    const botReply0 = getBotReply("Henry");
+    const expectedReply0 = `Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
+    expect(botReply0).toEqual(expectedReply0);
+
+    const botReply1 = getBotReply("ok");
+
+    const expectedReply1 =
+      "Great, now tell me, are you feeling energised or relaxed?";
     expect(botReply1).toEqual(expectedReply1);
 
     const botReply2 = getBotReply("relaxed");
@@ -148,7 +154,7 @@ describe("getBotReply", () => {
     const botReply7 = getBotReply("no");
 
     const expectedReply7 =
-      "Well, I headrd theres this software that aims to get you high without drugs?";
+      "Well, I heard theres this software that aims to get you high without drugs?";
     expect(botReply7).toEqual(expectedReply7);
 
     const botReply8 = getBotReply("no");
