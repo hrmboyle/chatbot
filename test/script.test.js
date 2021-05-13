@@ -13,7 +13,9 @@ beforeEach(() => {
 describe("getBotReply", () => {
   it("Branch Energised", () => {
     const botReply0 = getBotReply("Henry");
-    const expectedReply0 = `Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
+    const expectedReply0 =
+      "Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. If you get lost in my breadth and depth of universal wisdom, type reset at any time, we can take it from the top. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok";
+
     expect(botReply0).toEqual(expectedReply0);
 
     const botReply1 = getBotReply("ok");
@@ -102,7 +104,7 @@ describe("getBotReply", () => {
     const botReply16 = getBotReply("no");
 
     const expectedReply16 =
-      "Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a simple yes.";
+      "Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a 'return'.";
     expect(botReply16).toEqual(expectedReply16);
   });
   // const botReply1 = getBotReply("energised" || "yes");
@@ -113,7 +115,7 @@ describe("getBotReply", () => {
   // expect(botReply1).toEqual(expectedReply1);
   it("two", () => {
     const botReply0 = getBotReply("Henry");
-    const expectedReply0 = `Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
+    const expectedReply0 = `Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. If you get lost in my breadth and depth of universal wisdom, type reset at any time, we can take it from the top. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
     expect(botReply0).toEqual(expectedReply0);
 
     const botReply1 = getBotReply("ok");
@@ -207,7 +209,7 @@ describe("getBotReply", () => {
     const botReply16 = getBotReply("no");
 
     const expectedReply16 =
-      "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble yes (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
+      "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble 'return' (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
     expect(botReply16).toEqual(expectedReply16);
   });
 });
