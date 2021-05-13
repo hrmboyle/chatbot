@@ -128,10 +128,86 @@ describe("getBotReply", () => {
       "How about going for a nap? Maybe you might lucid dream!";
     expect(botReply2).toEqual(expectedReply2);
 
-    const botReply3 = getBotReply("yes");
+    const botReply3 = getBotReply("no");
 
-    const expectedReply3 =
-      "well sweet as - <a href=https://obe4u.com/files/the_phase.pdf>here is a book that might help</a>";
+    const expectedReply3 = "Alright then, how about some good old meditation";
     expect(botReply3).toEqual(expectedReply3);
+
+    const botReply4 = getBotReply("no");
+
+    const expectedReply4 =
+      "Go jump in a float tank, you may well astral project!";
+    expect(botReply4).toEqual(expectedReply4);
+
+    const botReply5 = getBotReply("no");
+
+    const expectedReply5 =
+      "No? Why don't you go sit under a tree, meditate on the essence of being and come to the shores of deeper a connection to all that is?";
+    expect(botReply5).toEqual(expectedReply5);
+
+    const botReply6 = getBotReply("no");
+
+    const expectedReply6 =
+      "Okay, that last one is a bit of admin. Why don't we go ahead and watch a film instead?";
+    expect(botReply6).toEqual(expectedReply6);
+
+    const botReply7 = getBotReply("no");
+
+    const expectedReply7 =
+      "Well, I heard theres this software that aims to get you high without drugs?";
+    expect(botReply7).toEqual(expectedReply7);
+
+    const botReply8 = getBotReply("no");
+
+    const expectedReply8 =
+      "Alas - why not explore the largest number you can count to in your head?";
+    expect(botReply8).toEqual(expectedReply8);
+
+    const botReply9 = getBotReply("no");
+
+    const expectedReply9 =
+      "Yeah I would not want to do that either, but, I also heard you can get quite the rush by simple breathwork?";
+    expect(botReply9).toEqual(expectedReply9);
+
+    const botReply10 = getBotReply("no");
+
+    const expectedReply10 =
+      "Okay, how about, contemplating the existential dred that comes in our modern era, then with the power of interpretive dance, freeing yourself from the shackles of malignent thoughts?";
+    expect(botReply10).toEqual(expectedReply10);
+
+    const botReply11 = getBotReply("no");
+
+    const expectedReply11 =
+      "Thought that was it for sure eh. Well, go read a book?";
+    expect(botReply11).toEqual(expectedReply11);
+
+    const botReply12 = getBotReply("no");
+
+    const expectedReply12 = "What about reading a comic?";
+    expect(botReply12).toEqual(expectedReply12);
+
+    const botReply13 = getBotReply("no");
+
+    const expectedReply13 =
+      "Well, if you aren't up to reading, why not do some writing?";
+    expect(botReply13).toEqual(expectedReply13);
+
+    const botReply14 = getBotReply("no");
+
+    const expectedReply14 =
+      "Look, I am running low on ideas here, maybe start of a career in painting as an abstract impressionist?";
+    expect(botReply14).toEqual(expectedReply14);
+
+    const botReply15 = getBotReply("no");
+
+    const expectedReply15 =
+      "Well, why not instigate a premonition that will forever change the trajectory of your being?";
+    expect(botReply15).toEqual(expectedReply15);
+
+    const botReply16 = getBotReply("no");
+
+    const expectedReply16 =
+      "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble yes (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
+    expect(botReply16).toEqual(expectedReply16);
   });
 });

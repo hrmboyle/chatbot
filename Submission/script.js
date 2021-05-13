@@ -15,6 +15,7 @@ const yes = (msg) => {
     msg === "Okay" ||
     msg === "okay" ||
     msg === "ok" ||
+    msg === "OKAY" ||
     msg === "k" ||
     msg === "sure" ||
     msg === "Sure" ||
@@ -28,11 +29,11 @@ const getBotReply = (msg) => {
   if (msg === "reset" || msg === "Reset" || msg === "RESET") {
     level = 2;
     path = undefined;
-    return "Back to the beginning then, are you feeling energised or relaxed?";
+    return "Back to the beginning then! Are you feeling energised or relaxed?";
   }
   if (level === 0) {
     level = 1;
-    return `Hi ${msg}, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
+    return `Hi ${msg}, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. If you get lost in my breadth and depth of universal wisdom, type reset at any time, we can take it from the top. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok`;
   }
 
   if (level === 1) {
@@ -84,7 +85,7 @@ const getBotReply = (msg) => {
       }
     }
     level = 3;
-    return "oop, try again, remember yes or no as I am not that clever";
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 4) {
@@ -108,7 +109,7 @@ const getBotReply = (msg) => {
       }
     }
     level = 4;
-    return "oop, try again, remember yes or no as I am not that clever";
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 5) {
@@ -130,6 +131,8 @@ const getBotReply = (msg) => {
         return "Cool cool cool, <a href='https://floatationlocations.com/category/new-zealand/'>here is a list of places to go</a>";
       }
     }
+    level = 5;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 6) {
@@ -152,6 +155,8 @@ const getBotReply = (msg) => {
         return "Very nice choice. There are no hyperlinks for this one. You will need good old fashion intuition. ";
       }
     }
+    level = 6;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 7) {
@@ -173,6 +178,8 @@ const getBotReply = (msg) => {
         return "cool, <a href = https://pickamovieforme.com/>this website will help</a>";
       }
     }
+    level = 7;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 8) {
@@ -194,6 +201,8 @@ const getBotReply = (msg) => {
         return "I dunno how legit it is, but <a href='https://i-doser.com/>check it here</a>";
       }
     }
+    level = 8;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 9) {
@@ -215,6 +224,8 @@ const getBotReply = (msg) => {
         return "Good luck... one... two... three...";
       }
     }
+    level = 9;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 10) {
@@ -236,6 +247,8 @@ const getBotReply = (msg) => {
         return "<a href='https://www.verywellmind.com/holotropic-breathwork-4175431'>Holotropic breathing is the name</a>";
       }
     }
+    level = 10;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 11) {
@@ -257,6 +270,8 @@ const getBotReply = (msg) => {
         return "Best of luck, I can't give any links for this, it's more of a feel it out for yourself situation";
       }
     }
+    level = 11;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 12) {
@@ -278,6 +293,8 @@ const getBotReply = (msg) => {
         return "Well chosen, <a href='https://www.lifehack.org/articles/technology/10-best-book-recommendation-sites-you-need-know.html'>this resource</a> might help in your endeavour";
       }
     }
+    level = 12;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 13) {
@@ -299,6 +316,8 @@ const getBotReply = (msg) => {
         return "Nice one, well, be done with me, close me down!";
       }
     }
+    level = 13;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 14) {
@@ -320,6 +339,8 @@ const getBotReply = (msg) => {
         return "Easy, <a href='https://www.servicescape.com/writing-prompt-generator'>this might help</a>";
       }
     }
+    level = 14;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 15) {
@@ -341,13 +362,15 @@ const getBotReply = (msg) => {
         return "Good luck on the new endeavour! Here is a <a href='https://osnatfineart.com/abstract-art-blog/37/how-to-paint-abstract-impressionismlittle'>guide</a>";
       }
     }
+    level = 15;
+    return "cannot compute, try once more, remember, yes or no";
   }
 
   if (level === 16) {
     level = 17;
     if (path === "yes") {
       if (msg === "no" || msg === "nah" || msg === "n") {
-        return "Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a simple yes.";
+        return "Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a 'return'.";
       }
       if (yes(msg)) {
         return "cool";
@@ -355,7 +378,7 @@ const getBotReply = (msg) => {
     }
     if (path === "no") {
       if (msg === "no" || msg === "nah" || msg === "n") {
-        return "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble yes (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
+        return "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble 'return' (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
       }
     }
   }
