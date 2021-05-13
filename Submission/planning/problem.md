@@ -22,8 +22,9 @@ Important to the chatbot is a reset/return feature which is mentioned to the use
 
 PROCESSES.
 
-Processes are contextualised by the accompanying Excalidraw document. Basically, NO type inputs from the user are the key driver for further chatbot content.
-Yes answers imply the users have come to their desired outcome. As a result an 'end' type message will be shown, this will include data relevant to the question they have answered.
+Basically, NO type inputs from the user are the key driver for further chatbot content.
+Yes answers imply the users have come to their desired outcome. As a result an 'end' type message will be shown, this will include data relevant to the question they have answered. There will also be a reset command, contextualised to the user at the beginning. This resets the bot to the beginning. Reset will also be prompted once all answers have been exhausted.
+Another important element is the "cannot compute, try once more, remember, yes or no" which will be given if a non suitable answer is given.
 
 Examples seen in Test scenarios
 
