@@ -26,7 +26,17 @@ const yes = (msg) => {
 };
 
 const getBotReply = (msg) => {
-  if (msg === "reset" || msg === "Reset" || msg === "RESET") {
+  if (
+    msg === "reset" ||
+    msg === "Reset" ||
+    msg === "RESET" ||
+    msg === "return" ||
+    msg === "Return" ||
+    msg === "RETURN" ||
+    msg === "restart" ||
+    msg === "Restart" ||
+    msg === "RESTART"
+  ) {
     level = 2;
     path = undefined;
     return "Back to the beginning then! Are you feeling energised or relaxed?";
@@ -95,7 +105,7 @@ const getBotReply = (msg) => {
         return "Alright then, what about some Tai Chi?";
       }
       if (yes(msg)) {
-        return "That's great, to learn more about yoga <a href='https://www.doyou.com/8-types-of-yoga-explained-16100/'> click here</a>. If you want to take things from the top again (type xyz)";
+        return "That's great, to learn more about yoga <a href='https://www.doyou.com/8-types-of-yoga-explained-16100/'> click here</a>. If you want to take things from the top again type reset";
       }
     }
 
@@ -105,7 +115,7 @@ const getBotReply = (msg) => {
       }
 
       if (yes(msg)) {
-        return "That's great, to learn more about meditation <a href='https://www.mindful.org/how-to-meditate/'>click here</a>. If you want to take things from the top again (type xyz)";
+        return "That's great, to learn more about meditation <a href='https://www.mindful.org/how-to-meditate/'>click here</a>. If you want to take things from the top again type reset";
       }
     }
     level = 4;
@@ -119,7 +129,7 @@ const getBotReply = (msg) => {
         return "Forest walk up your alley?";
       }
       if (yes(msg)) {
-        return "That's great, to learn more about yoga <a href='https://en.wikipedia.org/wiki/Tai_chi'> click here</a>. If you want to take things from the top again (type xyz)";
+        return "That's great, to learn more about yoga <a href='https://en.wikipedia.org/wiki/Tai_chi'> click here</a>. If you want to take things from the top again return";
       }
     }
     if (path === "no") {
@@ -381,6 +391,10 @@ const getBotReply = (msg) => {
         return "Well, all I can offer from here is whether or not you want to go back to the beginning of our conversation. Let me know with a humble 'return' (which you have been so determined to deny me!) if not, you can always go and choose what it is you wish to do";
       }
     }
+  }
+
+  if (level === 17) {
+    return "cannot compute m8 - type return or reset to kick me back into gear";
   }
 };
 
