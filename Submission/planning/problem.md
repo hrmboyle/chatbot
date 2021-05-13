@@ -143,3 +143,115 @@ Yes
 
 Output:
 cool, <a href = https://pickamovieforme.com/>this website will help</a>
+
+---
+
+START:
+Hi, human ... what's your name?
+
+Input:
+Henry
+
+Output:
+Hi Henry, my humble task is to point you in the direction of something to do. I am a simple being, so please respond simply. If you get lost in my breadth and depth of universal wisdom, type reset at any time, we can take it from the top. For the majority of answers, a simply yes or no will suffice. But hey let's push the envelope a little here, to begin, type ok
+
+Input:
+ok
+
+Output:
+Great, now tell me, are you feeling energised or relaxed?
+
+Input:
+energised
+
+Output:
+How about we go for a run? Who knows, maybe you might get a runners high!
+
+Input:
+no
+
+Output:
+Alright then, what about some Tai Chi?
+
+Input:
+no
+
+Output:
+Forest walk up your alley?
+
+Input:
+no
+
+Output:
+How about some Disc Golf?
+
+Input:
+no
+
+Output:
+Ahh, how about solving some of the worlds hardest math problems?
+
+Input:
+no
+
+Output:
+Maybe we could give praise to the singularity? Ever heard of Roko's Basilisk?
+
+Input:
+no
+
+Output:
+Go freediving then!
+
+Input:
+no
+
+Output:
+Okay, skydiving?
+
+Input:
+no
+
+Output:
+What about starting a new <strike>cult</strike> religion?
+
+Input:
+no
+
+Output:
+How about you go delve into the realms of Virtual Reality?
+
+Input:
+no
+
+Output:
+Okay okay, why don't you go plant some trees?
+
+Input:
+no
+
+Output:
+Not so keen on trees huh? Why don't you do your best to destablise central government banking?
+
+Input:
+no
+
+Output:
+Okay, I am reaching my wits end. You could go and learn to fly drones?
+
+Input:
+no
+
+Output:
+
+Input:
+no
+
+Output:
+Yeah I thought so. Alas, I have computed the options, you simply wan't to test my very patience. I cannot compute more, if you want to go back to the beginning let me know with a 'return'.
+
+Input:
+return
+
+Output:
+Back to the beginning then! Are you feeling energised or relaxed?

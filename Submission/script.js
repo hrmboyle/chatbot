@@ -91,7 +91,7 @@ const getBotReply = (msg) => {
       }
 
       if (yes(msg)) {
-        return "well sweet as - <a href=https://obe4u.com/files/the_phase.pdf>here is a book that might help</a>";
+        return "well sweet as - <a href='https://obe4u.com/files/the_phase.pdf'>here is a book that might help</a>";
       }
     }
     level = 3;
@@ -176,7 +176,7 @@ const getBotReply = (msg) => {
         return "Ahh, how about solving some of the worlds hardest math problems?";
       }
       if (yes(msg)) {
-        return "nice1 - well <a href =https://www.udisc.com/courses> here are some courses</a>";
+        return "nice1 - well <a href='https://www.udisc.com/courses'> here are some courses</a>";
       }
     }
     if (path === "no") {
@@ -185,7 +185,7 @@ const getBotReply = (msg) => {
       }
 
       if (yes(msg)) {
-        return "cool, <a href = https://pickamovieforme.com/>this website will help</a>";
+        return "cool, <a href ='https://pickamovieforme.com/'>this website will help</a>";
       }
     }
     level = 7;
@@ -208,7 +208,7 @@ const getBotReply = (msg) => {
       }
 
       if (yes(msg)) {
-        return "I dunno how legit it is, but <a href='https://i-doser.com/>check it here</a>";
+        return "I dunno how legit it is, but <a href='https://i-doser.com/'>check it here</a>";
       }
     }
     level = 8;
@@ -222,7 +222,7 @@ const getBotReply = (msg) => {
         return "Go freediving then!";
       }
       if (yes(msg)) {
-        return "<a href='https://rationalwiki.org/wiki/Roko's_basilisk'>Read on up here</a>";
+        return "<a href=`https://rationalwiki.org/wiki/Roko's_basilisk`>Read on up here</a>";
       }
     }
     if (path === "no") {
@@ -314,7 +314,7 @@ const getBotReply = (msg) => {
         return "Okay okay, why don't you go plant some trees?";
       }
       if (yes(msg)) {
-        return "Nice one, <a href='https://cutt.ly/5bDTG2z'this might help.</a>";
+        return "Nice one, <a href='https://cutt.ly/5bDTG2z'>this might help.</a>";
       }
     }
     if (path === "no") {
@@ -337,7 +337,7 @@ const getBotReply = (msg) => {
         return "Not so keen on trees huh? Why don't you do your best to destablise central government banking?";
       }
       if (yes(msg)) {
-        return "<a href=https://www.wikihow.com/Plant-a-Tree>Here be</a> some essential reading on the topic.";
+        return "<a href='https://www.wikihow.com/Plant-a-Tree'>Here be</a> some essential reading on the topic.";
       }
     }
     if (path === "no") {
