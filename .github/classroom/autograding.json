@@ -1,7 +1,7 @@
 {
   "tests": [
     {
-      "name": "Student tests",
+      "name": "Test Scenario tests",
       "setup": "npm install",
       "run": "npm test",
       "input": "",
